@@ -1,0 +1,86 @@
+{
+  "name": "TycoonPetSimulator",
+  "tree": {
+    "$className": "DataModel",
+
+    "ReplicatedStorage": {
+      "$className": "ReplicatedStorage",
+
+      "Modules": {
+        "$path": "ReplicatedStorage/Modules"
+      },
+
+      "Assets": {
+        "$className": "Folder",
+        "PetModels": {
+          "$className": "Folder"
+        },
+        "CoreSkins": {
+          "$className": "Folder"
+        }
+      },
+
+      "Remotes": {
+        "$className": "Folder",
+
+        "RequestOpenEgg": { "$className": "RemoteEvent" },
+        "EggResult": { "$className": "RemoteEvent" },
+
+        "RequestEquipPet": { "$className": "RemoteEvent" },
+        "GetPetInventory": { "$className": "RemoteFunction" },
+        "InventoryUpdated": { "$className": "RemoteEvent" },
+
+        "RequestChangeSkin": { "$className": "RemoteEvent" },
+
+        "RequestClonePet": { "$className": "RemoteEvent" },
+        "CloneResult": { "$className": "RemoteEvent" },
+        "CloneNotification": { "$className": "RemoteEvent" },
+
+        "RequestRebirth": { "$className": "RemoteEvent" },
+        "RebirthResult": { "$className": "RemoteEvent" },
+
+        "RequestUnlockSkill": { "$className": "RemoteEvent" },
+        "SkillTreeUpdated": { "$className": "RemoteEvent" }
+      }
+    },
+
+    "ServerScriptService": {
+      "$className": "ServerScriptService",
+
+      "Main": {
+        "$path": "ServerScriptService/Main.server.lua"
+      },
+      "Modules": {
+        "$path": "ServerScriptService/Modules"
+      }
+    },
+
+    "StarterPlayer": {
+      "$className": "StarterPlayer",
+
+      "StarterPlayerScripts": {
+        "$path": "StarterPlayer/StarterPlayerScripts"
+      }
+    },
+
+    "Workspace": {
+      "$className": "Workspace",
+
+      "Tycoons": {
+        "$className": "Folder"
+      },
+
+      "MapCenter": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": false,
+          "CanTouch": false,
+          "CanQuery": false,
+          "Transparency": 1,
+          "Size": { "Vector3": [2, 2, 2] }
+        }
+      }
+    }
+  }
+}
